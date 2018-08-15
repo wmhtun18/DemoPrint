@@ -32,11 +32,11 @@ namespace DemoPrint
 
         static IPrint CreatePrint()
         {
-#if PORTABLE
-            return null;
-#else
+//#if PORTABLE
+//            return null;
+//#else
             return new PrintText();
-#endif
+//#endif
         }
 
         internal static Exception NotImplementedInReferenceAssembly()
